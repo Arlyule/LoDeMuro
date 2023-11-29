@@ -1,0 +1,823 @@
+<nav
+  aria-label="breadcrumb"
+  style="margin: 20px; padding: auto; margin-left: 50px"
+>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Carreras</li>
+  </ol>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h1>Las mejores carreras y educación</h1>
+    </div>
+    <div class="col-sm">
+      <img
+        src="assets/img/_392d4443-94f8-413e-bd59-f431e02bc261.jfif"
+        class="img-fluid"
+        style="width: 525px; height: 260px"
+      />
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">Filtros</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm">
+              <h4>Áreas</h4>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Tecnologías"
+                  (click)="checkbox('tec')"
+                  checked="true"
+                />
+                <label class="form-check-label" for="Tecnologías">
+                  Tecnologías
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="EconómicoAdministrativo"
+                  (click)="checkbox('adm')"
+                  checked="true"
+                />
+                <label class="form-check-label" for="EconómicoAdministrativo">
+                  Económico Administrativo
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="IndustrialEléctricaElectrónica"
+                  (click)="checkbox('iee')"
+                  checked="true"
+                />
+                <label
+                  class="form-check-label"
+                  for="IndustrialEléctricaElectrónica"
+                >
+                  Industrial, Eléctrica y Electrónica
+                </label>
+              </div>
+            </div>
+            <div class="col-sm">
+              <h4>Nivel Educativo</h4>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="TécnicoSuperiorUniversitario"
+                  (click)="checkbox('tsu')"
+                  checked="true"
+                />
+                <label
+                  class="form-check-label"
+                  for="TécnicoSuperiorUniversitario"
+                >
+                  Técnico Superior Universitario
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Ingeniería"
+                  (click)="checkbox('ing')"
+                  checked="true"
+                />
+                <label class="form-check-label" for="Ingeniería">
+                  Ingeniería
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="Licenciatura"
+                  (click)="checkbox('lic')"
+                  checked="true"
+                />
+                <label class="form-check-label" for="Licenciatura">
+                  Licenciatura
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3" *ngIf="tec || tsu">
+          <div class="card animated-fadeIn">
+            <div class="card-header">
+              TSU Desarrollo de Software Multiplataforma
+            </div>
+            <div class="card-body">
+              <img
+                class="card-img-top"
+                src="assets/img/_647ea361-5b40-43fa-a0e8-b767e0d22420.jfif"
+                alt="Card image cap"
+              />
+              <div style="text-align: center">
+                <br />
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#modalTSUDSM"
+                >
+                  Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3" *ngIf="tec || tsu">
+          <div class="card animated-fadeIn">
+            <div class="card-header">
+              TSU Infraestructura de Redes Digitales
+            </div>
+            <div class="card-body">
+              <img
+                class="card-img-top"
+                src="assets/img/_14162083-10ea-4b94-8df0-58ba7542b570.jfif"
+                alt="Card image cap"
+              />
+              <div style="text-align: center">
+                <br />
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#modalTSURD"
+                >
+                  Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3" *ngIf="tec || ing">
+          <div class="card animated-fadeIn">
+            <div class="card-header">
+              Ingeniería Desarrollo y Gestión de Software
+            </div>
+            <div class="card-body">
+              <img
+                class="card-img-top"
+                src="assets/img/_3471690d-9bef-47c5-9f96-c2aa71519054.jfif"
+                alt="Card image cap"
+              />
+              <div style="text-align: center">
+                <br />
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#modalINGDGS"
+                >
+                  Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3" *ngIf="adm || lic">
+          <div class="card animated-fadeIn">
+            <div class="card-header">Licenciatura en Contaduría</div>
+            <div class="card-body">
+              <img
+                class="card-img-top"
+                src="assets/img/_84cda1d7-8ab0-4f1c-80d8-d20add450c2b.jfif"
+                alt="Card image cap"
+              />
+              <div style="text-align: center">
+                <br />
+                <!-- Botón para abrir el modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#modalLICC"
+                >
+                  Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <!-- Modal -->
+  <div class="modal" id="modalTSUDSM" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            TSU Desarrollo de Software Multiplataforma
+          </h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Pestañas de navegación -->
+          <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="seccion1-tab"
+                data-toggle="tab"
+                href="#TSUDSMocupacionesProfesionales"
+                >Ocupaciones Profesionales</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion2-tab"
+                data-toggle="tab"
+                href="#TSUDSMcompeteneciasAdquiridas"
+                >Competencias Adquiridas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion3-tab"
+                data-toggle="tab"
+                href="#TSUDSMperfilDeIngreso"
+                >Perfil de Ingreso</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion4-tab"
+                data-toggle="tab"
+                href="#TSUDSMmapaCurricular"
+                >Mapa Curricular</a
+              >
+            </li>
+          </ul>
+
+          <!-- Contenido de las secciones -->
+          <div class="tab-content mt-2">
+            <div
+              class="tab-pane fade show active"
+              id="TSUDSMocupacionesProfesionales"
+            >
+              <p>Podrá desempeñarse profesionalmente como:</p>
+              <ul>
+                <li>Desarrollador de aplicaciones móviles.</li>
+                <li>Desarrollador de aplicaciones para la nube.</li>
+                <li>
+                  Desarrollador de aplicaciones para Internet de las Cosas.
+                </li>
+                <li>Desarrollador de aplicaciones Web.</li>
+                <li>Ejecutor de Pruebas.</li>
+                <li>Analista de Sistemas.</li>
+                <li>Programador de Sistemas.</li>
+                <li>Administrador de Base de Datos.</li>
+                <li>Técnico en soporte de Sistemas Informáticos.</li>
+                <li>
+                  Integrador de seguridad en aplicaciones multiplataforma.
+                </li>
+              </ul>
+              <p>Y desenvolverse en:</p>
+              <ul>
+                <li>
+                  Empresas públicas y privadas dedicadas al desarrollo y
+                  consultoría de software.
+                </li>
+                <li>
+                  Empresas públicas y privadas cuyo fin no sea el desarrollo de
+                  software en funciones de análisis, diseño, implementación,
+                  evaluación y venta de software.
+                </li>
+                <li>
+                  En su propia empresa de integración de soluciones de software.
+                </li>
+                <li>
+                  En los sectores público y social, en las diferentes ramas
+                  productivas que demanden servicios de Tecnologías de la
+                  Información preferentemente en comercio electrónico y
+                  multimedia.
+                </li>
+                <li>
+                  En los sectores privado, público y social, en las diferentes
+                  ramas productivas que demanden servicios de Tecnologías de la
+                  Información.
+                </li>
+                <li>
+                  En forma independiente mediante consultorías de bienes y
+                  servicios.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="TSUDSMcompeteneciasAdquiridas">
+              <p>
+                Nuestro Técnico Superior Universitario en Tecnologías de la
+                Información área Desarrollo de Software Multiplataforma
+                desarrollará las competencias específicas en:
+              </p>
+              <ul>
+                <li>
+                  Implementar soluciones multiplataforma, en la nube y software
+                  embebido, en entornos seguros mediante la adquisición y
+                  administración de datos e ingeniería de software para
+                  contribuir a la automatización de los procesos en las
+                  organizaciones.
+                </li>
+                <li>
+                  Desarrollar sistemas de información empleando frameworks,
+                  patrones de diseño y arquitecturas de desarrollo para generar
+                  soluciones multiplataforma, en la nube y software embebido.
+                </li>
+                <li>
+                  Administrar información mediante gestores de bases de datos
+                  relacionales, no relacionales, orientadas a objetos,
+                  orientadas a archivos y distribuidas para la implementación de
+                  los sistemas de información.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="TSUDSMperfilDeIngreso">
+              <p>
+                El aspirante deberá de ser egresado en educación media superior,
+                preferentemente del área informática o áreas afines; contar con
+                habilidad para comunicarse apropiadamente e interpretar
+                instrucciones escritas y verbales, habilidades para el
+                desarrollo creativo e innovador, capacidad para desarrollar
+                autoaprendizaje, razonamiento formal que le facilite la solución
+                de problemas lógicos y de entorno social en el entorno
+                educativo, capacidad de construcción de su propio conocimiento,
+                conocimientos básicos del idioma inglés, sensibilidad a los
+                aspectos ecológicos y de protección al ambiente.
+              </p>
+              <p>
+                El Técnico Superior Universitario en Tecnologías de la
+                Información área Desarrollo de Software Multiplataforma cuenta
+                con las competencias profesionales necesarias para su desempeño
+                en el campo laboral, en el ámbito local, regional y nacional.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="TSUDSMmapaCurricular">
+              <p>Contenido de la Sección 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <!-- Modal -->
+  <div class="modal" id="modalTSURD" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">TSU Redes Digitales</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Pestañas de navegación -->
+          <ul class="nav nav-tabs" id="tabsTSURD">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="seccion1-tab"
+                data-toggle="tab"
+                href="#TSURDocupacionesProfesionales"
+                >Ocupaciones Profesionales</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion2-tab"
+                data-toggle="tab"
+                href="#TSURDcompeteneciasAdquiridas"
+                >Competencias Adquiridas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion3-tab"
+                data-toggle="tab"
+                href="#TSURDperfilDeIngreso"
+                >Perfil de Ingreso</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion4-tab"
+                data-toggle="tab"
+                href="#TSURDmapaCurricular"
+                >Mapa Curricular</a
+              >
+            </li>
+          </ul>
+
+          <!-- Contenido de las secciones -->
+          <div class="tab-content mt-2">
+            <div
+              class="tab-pane fade show active"
+              id="TSURDocupacionesProfesionales"
+            >
+              <p>Podrá desempeñarse profesionalmente como:</p>
+              <ul>
+                <li>
+                  Administrador de seguridad en infraestructura, datos y
+                  aplicaciones.
+                </li>
+                <li>Administrador, diseñador o ingeniero de redes.</li>
+                <li>Analista de seguridad.</li>
+                <li>Personal de respuesta a incidentes y soporte técnico.</li>
+                <li>
+                  Administrador de Servidores en múltiples plataformas de
+                  hardware y software.
+                </li>
+                <li>Integrador de sistemas e infraestructura</li>
+                <li>
+                  Técnico o ingeniero de soporte técnico para usuarios y
+                  dispositivos finales.
+                </li>
+                <li>Técnico o ingeniero de soporte técnico en redes</li>
+                <li>Programador de aplicaciones en hardware abierto.</li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="TSURDcompeteneciasAdquiridas">
+              <p>
+                El Técnico Superior Universitario en Tecnologías De La
+                Información Área Infraestructura De Redes Digitales cuenta con
+                las competencias profesionales necesarias para su desempeño en
+                el campo laboral, en el ámbito local, regional y nacional.
+              </p>
+              <p>
+                Nuestro Técnico Superior Universitario en Tecnologías De La
+                Información Área Infraestructura De Redes Digitales desarrollará
+                las competencias específicas en:
+              </p>
+              <ul>
+                <li>
+                  Desarrollar soluciones tecnológicas mediante la aplicación de
+                  fundamentos de programación y redes que atiendan necesidades
+                  de las organizaciones.
+                </li>
+                <li>
+                  Planear la infraestructura de redes digitales a través de
+                  modelos de referencia y metodologías de desarrollo para
+                  asegurar la integridad de los recursos de la organización.
+                </li>
+                <li>
+                  Implementar la solución de la infraestructura de redes
+                  digitales mediante la configuración de dispositivos, servicios
+                  e integración de tecnologías orientadas a la industria 4.0
+                  para optimizar los procesos de comunicación de la
+                  organización.
+                </li>
+                <li>
+                  Implementar Soluciones de seguridad a través de técnicas y
+                  esquemas especializados para proteger los sistemas de
+                  comunicación de los riesgos, amenazas y vulnerabilidades en la
+                  organización.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="TSURDperfilDeIngreso">
+              <p>
+                El aspirante deberá de ser egresado en educación media superior,
+                preferentemente del área informática o áreas afines; contar con
+                habilidad para comunicarse apropiadamente e interpretar
+                instrucciones escritas y verbales, habilidades para el
+                desarrollo creativo e innovador, capacidad para desarrollar
+                autoaprendizaje, razonamiento formal que le facilite la solución
+                de problemas lógicos y de entorno social en el entorno
+                educativo, capacidad de construcción de su propio conocimiento,
+                conocimientos básicos del idioma inglés, sensibilidad a los
+                aspectos ecológicos y de protección al ambiente.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="TSURDmapaCurricular">
+              <p>Contenido de la Sección 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <!-- Modal -->
+  <div class="modal" id="modalINGDGS" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            Ingeniería Desarrollo y Gestión de Software
+          </h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Pestañas de navegación -->
+          <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="seccion1-tab"
+                data-toggle="tab"
+                href="#INGDGSocupacionesProfesionales"
+                >Ocupaciones Profesionales</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion2-tab"
+                data-toggle="tab"
+                href="#INGDGScompeteneciasAdquiridas"
+                >Competencias Adquiridas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion3-tab"
+                data-toggle="tab"
+                href="#INGDGSperfilDeIngreso"
+                >Perfil de Ingreso</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion4-tab"
+                data-toggle="tab"
+                href="#INGDGSmapaCurricular"
+                >Mapa Curricular</a
+              >
+            </li>
+          </ul>
+
+          <!-- Contenido de las secciones -->
+          <div class="tab-content mt-2">
+            <div
+              class="tab-pane fade show active"
+              id="INGDGSocupacionesProfesionales"
+            >
+              <p>Podrá desempeñarse profesionalmente como:</p>
+              <ul>
+                <li>Programador(a) Full Stack</li>
+                <li>Desarrollador(a) de Apps</li>
+                <li>Líder de proyectos de desarrollo de software</li>
+                <li>Arquitecto(a) de software</li>
+                <li>Diseñador(a) de sistemas de información</li>
+                <li>
+                  Gestor(a) para el diseño, ejecución y mantenimiento de
+                  sistemas de información
+                </li>
+                <li>
+                  Ejecutivo(a) integrador(a) de tecnologías de vanguardia para
+                  optimizar la operación de industrias y empresas
+                </li>
+                <li>Administrador(a) de proyectos de desarrollo de software</li>
+                <li>Director(a)/Gerente de Tecnologías de Información</li>
+                <li>Director(a)/Gerente de Desarrollo de software</li>
+              </ul>
+
+              <p>Y desenvolverse en:</p>
+              <ul>
+                <li>
+                  En los sectores privado, público y social, en las diferentes
+                  ramas productivas que demanden servicios de desarrollo,
+                  integración y gestión de soluciones de software. En forma
+                  independiente mediante la integración de empresas orientadas
+                  al desarrollo y consultoría de software.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="INGDGScompeteneciasAdquiridas">
+              <p>
+                Con la Ingeniería en Desarrollo y Gestión de Software aprenderás
+                a:
+              </p>
+              <ul>
+                <li>
+                  Construir soluciones de software y sistemas inteligentes
+                  mediante la gestión de proyectos, integración de metodologías,
+                  modelos y herramientas de desarrollo bajo la normatividad
+                  aplicable para la optimización de proyectos de investigación,
+                  innovación, desarrollo tecnológico y de emprendimiento.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="INGDGSperfilDeIngreso">
+              <p>
+                Una vez terminado el TSU en TI área Desarrollo de Software
+                Multiplataforma, podrás continuar con la Ingeniería en
+                Desarrollo y Gestión de Software.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="INGDGSmapaCurricular">
+              <p>Contenido de la Sección 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <!-- Modal -->
+  <div class="modal" id="modalLICC" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Licenciatura en Contaduría</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Pestañas de navegación -->
+          <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="seccion1-tab"
+                data-toggle="tab"
+                href="#LICCocupacionesProfesionales"
+                >Ocupaciones Profesionales</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion2-tab"
+                data-toggle="tab"
+                href="#LICCcompeteneciasAdquiridas"
+                >Competencias Adquiridas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion3-tab"
+                data-toggle="tab"
+                href="#LICCperfilDeIngreso"
+                >Perfil de Ingreso</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="seccion4-tab"
+                data-toggle="tab"
+                href="#LICCmapaCurricular"
+                >Mapa Curricular</a
+              >
+            </li>
+          </ul>
+
+          <!-- Contenido de las secciones -->
+          <div class="tab-content mt-2">
+            <div
+              class="tab-pane fade show active"
+              id="LICCocupacionesProfesionales"
+            >
+              <p>Podrá desempeñarse profesionalmente como:</p>
+              <ul>
+                <li>Auditor interno y externo.</li>
+                <li>Contralor interno.</li>
+                <li>Contador general e independiente.</li>
+                <li>Asesor fiscal.</li>
+              </ul>
+
+              <p>Y desenvolverse en:</p>
+              <ul>
+                <li>
+                  Empresas públicas y privadas dedicadas a la producción de
+                  bienes y servicios.
+                </li>
+                <li>
+                  Empresas privadas dedicadas a: Hotelería, autotransporte y
+                  constructoras.
+                </li>
+                <li>Instituciones financieras.</li>
+                <li>
+                  Dependencias públicas federales, estatales y municipales.
+                </li>
+                <li>
+                  Su propia empresa proporcionando servicios de consultoría
+                  (contable, financiera y fiscal).
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="LICCcompeteneciasAdquiridas">
+              <p>Con la Licienciatura en Contaduría aprenderás a:</p>
+              <ul>
+                <li>
+                  Verificar la información financiera de manera veraz y oportuna
+                  para la adecuada toma de decisiones.
+                </li>
+                <li>
+                  Verificar la información financiera en materia de
+                  contribuciones que permita la toma de decisiones del ente
+                  económico con el propósito de optimizar sus recursos.
+                </li>
+                <li>
+                  Implementar en el ente económico, soluciones a problemas
+                  financieros a través del diagnóstico de la situación actual y
+                  su proyección futura.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane fade" id="LICCperfilDeIngreso">
+              <p>
+                Una vez terminado el TSU en Contaduría, podrás continuar con la
+                Licenciatura en Contaduría.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="LICCmapaCurricular">
+              <p>Contenido de la Sección 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

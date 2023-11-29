@@ -1,0 +1,28 @@
+<nav
+  aria-label="breadcrumb"
+  style="margin: 20px; padding: auto; margin-left: 50px"
+>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Valores</li>
+  </ol>
+</nav>
+<div class="container" style="margin: 20px; padding: auto; margin-left: 50px">
+  <div class="recuadro">
+    <h2>Valores</h2>
+    <ul>
+      <li *ngFor="let valor of valores">
+        <span class="nombre">{{ valor.nombre }}</span>
+        <span class="descripcion">{{ valor.descripcion }}</span>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="marquesina"
+    style="margin: 20px; padding: auto; margin-left: 50px"
+  >
+    <marquee behavior="scroll" direction="left">
+      <span *ngFor="let valor of valores"> {{ mision }} | </span>
+    </marquee>
+  </div>
+</div>

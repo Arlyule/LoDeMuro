@@ -1,0 +1,22 @@
+/* navbar.component.css */
+.navbar-nav .nav-link.active {
+  color: white;
+  font-weight: bold;
+}
+
+.search-results {
+  margin-top: 10px;
+}
+
+.search-result {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.found {
+  color: green;
+}
+
+.not-found {
+  color: red;
+}

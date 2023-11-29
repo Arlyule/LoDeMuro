@@ -1,0 +1,590 @@
+<nav
+  aria-label="breadcrumb"
+  style="margin: 20px; padding: auto; margin-left: 50px"
+>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Becas</li>
+  </ol>
+</nav>
+<h1 style="margin: 2.5%; margin-left: 5%; color: #063970">Becas</h1>
+<div
+  class="card"
+  style="
+    width: 90%;
+    background-color: #3498db;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+  "
+>
+  <h3 style="margin-top: 20px; margin-left: 20px">Becas por la universidad</h3>
+  <marquee
+    behavior="scroll"
+    direction="left"
+    scrollamount="12"
+    scrolldelay="100"
+    width="100%"
+  >
+    <div
+      class="card-body"
+      style="
+        display: flex;
+        justify-content: space-between;
+        margin: 3%;
+        border-radius: 10px;
+        justify-content: center;
+      "
+    >
+      <div
+        class="card custom-card"
+        data-toggle="modal"
+        data-target="#rendimientoModal"
+      >
+        <img src="assets/img/Rendimiento.png" class="card-img-top" alt="..." />
+        <div class="card-body" style="border-radius: 10px">
+          <h2 class="card-title">Rendimiento</h2>
+        </div>
+      </div>
+      <div
+        class="card custom-card"
+        data-toggle="modal"
+        data-target="#alimentacionModal"
+      >
+        <img src="assets/img/Alimenticia.png" class="card-img-top" alt="..." />
+        <div class="card-body" style="border-radius: 10px">
+          <h2 class="card-title">Alimenticia</h2>
+        </div>
+      </div>
+      <div
+        class="card custom-card"
+        data-toggle="modal"
+        data-target="#deportivaModal"
+      >
+        <img src="assets/img/Deportiva.png" class="card-img-top" alt="..." />
+        <div class="card-body" style="border-radius: 10px">
+          <h2 class="card-title">Deportiva</h2>
+        </div>
+      </div>
+      <div
+        class="card custom-card"
+        data-toggle="modal"
+        data-target="#nesesidadModal"
+      >
+        <img src="assets/img/nesesidad.png" class="card-img-top" alt="..." />
+        <div class="card-body" style="border-radius: 10px">
+          <h2 class="card-title">Nesesidad</h2>
+        </div>
+      </div>
+    </div>
+  </marquee>
+</div>
+
+<!-- becas federales -->
+<div
+  class="card"
+  style="
+    width: 90%;
+    background-color: #3498db;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+  "
+>
+  <h3 style="margin-top: 20px; margin-left: 20px">Becas Federales</h3>
+  <marquee
+    behavior="scroll"
+    direction="left"
+    scrollamount="12"
+    scrolldelay="100"
+    width="100%"
+  >
+    <div
+      class="card-body"
+      style="
+        display: flex;
+        justify-content: space-between;
+        margin: 3%;
+        border-radius: 10px;
+        justify-content: center;
+      "
+    >
+      <div
+        class="card custom-card"
+        data-toggle="modal"
+        data-target="#benitoModal"
+      >
+        <img src="assets/img/benito.png" class="card-img-top" alt="..." />
+        <div class="card-body" style="border-radius: 10px">
+          <h2 class="card-title">Benito Juarez</h2>
+        </div>
+      </div>
+      <div class="card custom-card" data-toggle="modal" data-target="#gtoModal">
+        <img src="assets/img/gto.png" class="card-img-top" alt="..." />
+        <div class="card-body" style="border-radius: 10px">
+          <h2 class="card-title">JuventudEsGTO</h2>
+        </div>
+      </div>
+    </div>
+  </marquee>
+</div>
+
+<!--Modal beca por rendimiento -->
+<div
+  class="modal fade"
+  id="rendimientoModal"
+  tabindex="-1"
+  aria-labelledby="rendimientoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="background-color: #063970">
+      <div class="modal-header" style="background-color: white">
+        <h2
+          class="modal-title animate__animated animate__bounce"
+          id="rendimientoModalLabel"
+        >
+          Beca por Rendimeinto Academico
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3 custom-cards">
+          <img
+            src="assets/img/rendi3.png"
+            class="card-img-top"
+            alt="#"
+            style="height: 470px"
+          />
+          <div class="card-body">
+            <p class="card-text animate__animated animate__flipInY">
+              Consiste en la exención de un porcentaje del pago de la
+              inscripción cuatrimestral a los alumnos de la Universidad y se
+              establece conforme a los siguientes cuatrimestres, promedios y
+              porcentajes de excención:
+            </p>
+            <div class="text-lg-center" style="margin: 20px">
+              <img src="assets/img/rendi.png" alt="" style="width: 90%" />
+            </div>
+            <p>Requisitos:</p>
+
+            <ul class="animate__animated animate__flipInX">
+              <li>Ser alumno regular del cuatrimestre.</li>
+              <li>
+                Registrar un promedio del cuatrimestre anterior igual o superior
+                a 8.6 para el nivel TSU y 9.1 para el nivel Licenciatura
+                (ingenierías).
+              </li>
+              <li>
+                No registrar asignaturas no acreditadas ni aprobadas en examen
+                de recuperación global o taller remedial del cuatrimestre
+                anterior.
+              </li>
+              <li>Solicitud debidamente llenada y firmada.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: white">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal beca por alimentacion -->
+<div
+  class="modal fade"
+  id="alimentacionModal"
+  tabindex="-1"
+  aria-labelledby="alimentacionModal5Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #063970">
+      <div class="modal-header" style="background-color: white">
+        <h2
+          class="modal-title animate__animated animate__bounce"
+          id="alimentacionModalLabel"
+        >
+          Beca Alimenticia
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3 custom-cards">
+          <img
+            src="assets/img/ali.png"
+            class="card-img-top"
+            alt="#"
+            style="height: 470px"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Consiste en la ministración de una comida al día en la Universidad
+              a los alumnos de la modalidad escolarizada, los solicitantes
+              deberán entregar el formato de canalización del tutor académico
+              para tener derecho a la solicitud del apoyo.
+            </p>
+
+            <p>Requisitos:</p>
+
+            <ul>
+              <li>Ser alumno regular del cuatrimestre.</li>
+              <li>
+                Solicitud debidamente llenada y firmada con visto bueno del
+                director del área académica correspondiente, con los siguientes
+                documentos:
+                <ul>
+                  <li>
+                    Constancia de ingresos económicos familiares no mayor a un
+                    mes.
+                  </li>
+                  <li>
+                    Oficio de recomendación por parte del tutor académico
+                    describiendo la necesidad del apoyo
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: white">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal beca por deportiva -->
+<div
+  class="modal fade"
+  id="deportivaModal"
+  tabindex="-1"
+  aria-labelledby="deportivaModal5Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #063970">
+      <div class="modal-header" style="background-color: white">
+        <h2
+          class="modal-title animate__animated animate__bounce"
+          id="deportivaModalLabel"
+        >
+          Beca Deportiva
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3 custom-cards">
+          <img
+            src="assets/img/rendi2.png"
+            class="card-img-top"
+            alt="#"
+            style="height: 470px"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Consiste en la exención del 100% en el pago de la inscripción
+              cuatrimestral para los alumnos del primero al quinto cuatrimestre
+              y del 50% para los alumnos del séptimo al onceavo cuatrimestre,
+              que sean seleccionados para representar a la Universidad en
+              eventos deportivos o culturales oficiales.
+            </p>
+
+            <p>Requisitos:</p>
+
+            <ul>
+              <li>Ser alumno regular del cuatrimestre.</li>
+              <li>
+                Registrar un promedio del cuatrimestre anterior igual o superior
+                a 9.0 al momento de realizar la solicitud.
+              </li>
+              <li>
+                No registrar asignaturas no acreditadas ni aprobadas en examen
+                de recuperación global o taller remedial del cuatrimestre
+                anterior.
+              </li>
+              <li>
+                Oficio del instructor deportivo o cultural avalando la
+                participación del solicitante en la actividad correspondiente
+              </li>
+              <li>
+                Solicitud debidamente llenada y firmada con visto bueno del
+                director del área académica correspondiente.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: white">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal beca por nesesidad -->
+<div
+  class="modal fade"
+  id="nesesidadModal"
+  tabindex="-1"
+  aria-labelledby="nesesidadModal5Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #063970">
+      <div class="modal-header" style="background-color: white">
+        <h2
+          class="modal-title animate__animated animate__bounce"
+          id="nesesidadModalLabel"
+        >
+          Beca por Nesesidad
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3 custom-cards">
+          <img
+            src="assets/img/ne.png"
+            class="card-img-top"
+            alt="#"
+            style="height: 470px"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Consiste en la ministración mensual no reembolsable de una
+              cantidad de dinero, a los alumnos con promedio mínimo de ocho y
+              necesidad económica extrema que ponga en riesgo la continuidad de
+              sus estudios en la Universidad.
+            </p>
+
+            <p>Requisitos:</p>
+
+            <ul>
+              <li>Ser alumno regular del cuatrimestre.</li>
+              <li>No contar con otro tipo de estímulo o apoyo económico</li>
+              <li>
+                Obtener un promedio mínimo de ocho en el cuatrimestre anterior
+                sin adeudo de materias al momento de realizar la solicitud
+              </li>
+              <li>
+                Realizar una entrevista con el Subdirector de Servicios
+                Escolares
+              </li>
+              <li>
+                Solicitud debidamente llenada y firmada por el director del área
+                académica correspondiente, con los siguientes documentos:
+                <ul>
+                  <li>Comprobante de ingresos económicos familiares;</li>
+                  <li>
+                    Carta redactada por el alumno donde exponga las principales
+                    razones por las que solicita el apoyo por necesidad
+                    apremiante firmada por el solicitante y por el padre o jefe
+                    de familia.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: white">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal beca benito -->
+<div
+  class="modal fade"
+  id="benitoModal"
+  tabindex="-1"
+  aria-labelledby="benitoModal5Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #063970">
+      <div class="modal-header" style="background-color: white">
+        <h2
+          class="modal-title animate__animated animate__bounce"
+          id="benitoModalLabel"
+        >
+          Beca Benito Juarez (Jovenes Escribiendo el Futuro)
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3 custom-cards">
+          <img
+            src="assets/img/benito2.png"
+            class="card-img-top"
+            alt="#"
+            style="height: 470px"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              La Beca para el Bienestar Benito Juárez de Educación Superior,
+              también conocida como “Jóvenes Escribiendo el Futuro”, es un
+              programa del Gobierno de México que tiene como objetivo apoyar a
+              los estudiantes de licenciatura, técnico superior universitario o
+              sus equivalentes, que están inscritos en alguna de las
+              universidades prioritarias
+            </p>
+
+            <p>Requisitos:</p>
+
+            <ul>
+              <li>
+                Ser estudiante de licenciatura, técnico superior universitario o
+                sus equivalentes.
+              </li>
+              <li>
+                Estar inscrito en alguna de las universidades prioritarias
+              </li>
+              <li>
+                Si ya has recibido esta beca, debe haber sido durante menos de
+                45 meses.
+              </li>
+              <p>
+                La beca consta de 2,575 pesos mensuales y podrás tenerla durante
+                los 10 meses del ciclo escolar y hasta por un máximo de 45 meses
+                siempre y cuando sigas cumpliendo con los requisitos
+                establecidos
+              </p>
+              <p>
+                Para mas informacion visista la pagina oficial
+                <a
+                  href="https://www.gob.mx/becasbenitojuarez/articulos/beca-jovenes-escribiendo-el-futuro-de-educacion-superior"
+                  style="color: black"
+                  >"Jovenes Escribiendo el Futuro"</a
+                >
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: white">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal gto -->
+<div
+  class="modal fade"
+  id="gtoModal"
+  tabindex="-1"
+  aria-labelledby="gtoModal5Label"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #063970">
+      <div class="modal-header" style="background-color: white">
+        <h2
+          class="modal-title animate__animated animate__bounce"
+          id="gtoModalLabel"
+        >
+          Beca Guanajuato (JuventudEsGTO)
+        </h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3 custom-cards">
+          <img
+            src="assets/img/gto2.png"
+            class="card-img-top"
+            alt="#"
+            style="height: 470px"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              La Beca de Educación Superior de JuventudesGTO es un programa del
+              Gobierno del estado de Guanajuato que busca contribuir a la
+              permanencia y egreso de estudiantes guanajuatenses del nivel TSU y
+              licenciatura que presenten alguna desventaja social o situación de
+              vulnerabilidad
+            </p>
+
+            <p>Requisitos:</p>
+
+            <ul>
+              <li>
+                Ser Guanajuatense, por nacimiento o residencia mínima de dos
+                años comprobables.
+              </li>
+              <li>
+                Ser alumno inscrito en nivel TSU o Licenciatura de escuelas
+                públicas o privadas.
+              </li>
+              <li>Tener alguna desventaja social o vulnerabilidad.</li>
+              <li>El ingreso mensual per cápita igual o menor a $4,246.06</li>
+              <p>
+                Para mas informacion visista la pagina oficial
+                <a
+                  href="https://juventudesgto.guanajuato.gob.mx/wp-content/uploads/Convocatoria-Beca-Educacion-Superior-2023.pdf"
+                  style="color: black"
+                  >"JuventudEsGTO"</a
+                >
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: white">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

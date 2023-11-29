@@ -1,0 +1,14 @@
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* Crear 5 columnas con el mismo ancho */
+  gap: 10px;
+  /* Agregar un espacio entre las imágenes */
+}
+
+.image-container div img {
+  width: 100%;
+  /* Asegurarse de que las imágenes ocupen todo el ancho de su celda */
+  height: auto;
+  /* Mantener la relación de aspecto original de las imágenes */
+}

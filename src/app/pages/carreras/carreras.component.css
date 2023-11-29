@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #063970 !important;
+}
+
+.footer {
+  background-color: #063970 !important;
+}
+
+.img-header {
+  text-align: center;
+}
+
+.card {
+  transition: all 0.25s;
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+}
+
+.card-title {
+  font-size: larger;
+}
+
+.card-text {
+  height: 200px;
+  text-align: justify;
+  color: gray;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.footer {
+  background-color: #063970 !important;
+}
+
+
+                /* Ajuste del tamaño de las pestañas */
+                .nav-tabs .nav-item {
+                  flex: 1;
+                  text-align: center;
+                }
+
+                /* Ajuste para que el contenido de la pestaña sea visible */
+                .tab-content {
+                  overflow: hidden;
+                }
+
+                /* Agrega estas clases a tu archivo de estilos CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}

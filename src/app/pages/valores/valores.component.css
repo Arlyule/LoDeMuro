@@ -1,0 +1,69 @@
+.container {
+    margin: 20px;
+    max-width: 90%;
+}
+
+  @keyframes fondo {
+    /* Usamos los porcentajes para indicar cómo cambia el gradiente */
+    0% {
+      /* El gradiente empieza con el primer color en la esquina superior izquierda */
+      background-position: 0% 0%;
+    }
+    50% {
+      /* El gradiente llega al último color en la esquina inferior derecha */
+      background-position: 100% 100%;
+    }
+    100% {
+      /* El gradiente vuelve al primer color en la esquina superior izquierda */
+      background-position: 0% 0%;
+    }
+  }
+
+  .recuadro {
+    border: 2px outset black;
+  padding: 10px;
+  margin: 10px;
+  background: linear-gradient(-65deg, #00b4d8, #6ad6ec, #a8d6de, #bbdde4, #ffffff);
+  }
+
+  .nombre {
+    font-weight: bold;
+    color: blue;
+    font-size: large;
+  }
+  .recuadro:hover{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  }
+
+  .descripcion {
+    font-style: italic bold;
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+
+  .marquesina {
+    border:10px solid rgb(60, 0, 255)(116, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    text-shadow: 9px 7px 10px #ed2323;
+    font-size: 25px;
+  }
+
+  @keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		right: 100%;
+	}
+}
+
+.recuadro li span:first-child {
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
+
+  .recuadro li:hover span:first-child {
+    transform: scale(2);
+  }

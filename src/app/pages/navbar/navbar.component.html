@@ -1,0 +1,90 @@
+<!-- navbar.component.html -->
+<nav
+  class="navbar navbar-expand-lg bg-tertiary"
+  style="background-color: #063970"
+>
+  <div
+    class="container-fluid"
+    style="
+      background-color: #063970;
+      padding: 1%;
+      justify-content: space-between;
+      flex-grow: 0;
+    "
+  >
+    <a href="#"><img src="assets\img\logoutng.png" alt="" /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      style="flex-grow: 0"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/']"
+            [routerLinkActive]="['active']"
+            [class.active]="isActive('/')"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/becas']"
+            [routerLinkActive]="['active']"
+            [class.active]="isActive('/becas')"
+            >Becas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/exito']"
+            [routerLinkActive]="['active']"
+            [class.active]="isActive('/exito')"
+            [class.active]="isActive('/empre')"
+            >Historias de Éxito</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/carreras']"
+            [routerLinkActive]="['active']"
+            [class.active]="isActive('/carreras')"
+            >Carreras</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/valores']"
+            [routerLinkActive]="['active']"
+            [class.active]="isActive('/valores')"
+            >Valores</a
+          >
+        </li>
+      </ul>
+      <form id="searchForm" class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,53 @@
+.custom-card {
+  width: 18rem;
+  background-color: #063970;
+  color: white;
+  justify-content: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  margin: 1%;
+}
+
+.custom-card:hover {
+  background-color: #04508c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilo para modificar el tamaño del modal */
+.modal .modal-dialog {
+  max-width: 50%;
+  position: relative;
+  /* Puedes ajustar este valor según tus necesidades */
+}
+
+.modal .modal-content {
+  width: 100%;
+}
+
+/* Opcional: Centrar el modal en la pantalla */
+.modal .modal-dialog {
+  margin: 10% auto;
+}
+
+
+.custom-cards {
+  background-color: #9e9e9e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  border-radius: 10px;
+}
+
+.card {
+  transition: all 0.25s;
+  box-shadow: 0 12px 14px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+}
