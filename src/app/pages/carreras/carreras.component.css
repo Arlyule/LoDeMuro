@@ -70,3 +70,7 @@
 .animated-fadeIn {
   animation: fadeIn 1s ease-in-out;
 }
+
+p {
+  text-align: justify;
+}
