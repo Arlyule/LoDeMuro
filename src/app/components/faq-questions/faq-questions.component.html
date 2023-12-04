@@ -1,0 +1,27 @@
+<nav
+  aria-label="breadcrumb"
+  style="margin: 20px; padding: auto; margin-left: 50px"
+>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Preguntas frecuentes {{tema}}</li>
+  </ol>
+<main>
+    <h1>Preguntas frecuentes</h1>
+    <p>¡Consulta las dudas mas recurrentes!</p>
+
+    <div style="background-color: #E5453F; text-align: center; margin-top: 50px; font-weight: bold; color: white;">
+        <p>
+            Sección de preguntas
+        </p>
+    </div>
+    <div *ngFor="let pregunta of preguntas">
+        <button class="accordion">
+            <i class="fa-solid fa-computer"></i>
+            {{pregunta.pregunta}}
+        </button>
+        <div class="panel">
+          <p>{{pregunta.respuesta}}</p>
+        </div>
+    </div>
+</main>

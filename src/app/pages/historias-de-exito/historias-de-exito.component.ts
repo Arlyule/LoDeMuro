@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./historias-de-exito.component.css']
 })
 export class HistoriasDeExitoComponent {
-
+tema: string = 'historias-de-exito';
 }

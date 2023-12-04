@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./becas.component.css']
 })
 export class BecasComponent {
-
+tema: string = "becas";
 }

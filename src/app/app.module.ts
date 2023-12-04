@@ -11,6 +11,7 @@ import { HistoriasDeExitoComponent } from './pages/historias-de-exito/historias-
 import { CarrerasComponent } from './pages/carreras/carreras.component';
 import { ValoresComponent } from './pages/valores/valores.component';
 import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
+import { FaqQuestionsComponent } from './components/faq-questions/faq-questions.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { PlaceholderComponent } from './pages/placeholder/placeholder.component'
     HistoriasDeExitoComponent,
     CarrerasComponent,
     ValoresComponent,
-    PlaceholderComponent
+    PlaceholderComponent,
+    FaqQuestionsComponent
 
   ],
   imports: [

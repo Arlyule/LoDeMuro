@@ -9,6 +9,7 @@ import { EmprendimientoComponent } from './pages/emprendimiento/emprendimiento.c
 import { CarrerasComponent } from './pages/carreras/carreras.component';
 import { ValoresComponent } from './pages/valores/valores.component';
 import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
+import { FaqQuestionsComponent } from './components/faq-questions/faq-questions.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'empre', component: EmprendimientoComponent },
   { path: 'carreras', component: CarrerasComponent },
   { path: 'valores', component: ValoresComponent },
+  { path: 'faq-questions/:tema', component: FaqQuestionsComponent },
   { path: 'si', component: PlaceholderComponent }
 ];
 

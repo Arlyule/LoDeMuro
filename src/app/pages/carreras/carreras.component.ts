@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./carreras.component.css']
 })
 export class CarrerasComponent {
+  tema: string = "carreras";
   tec: boolean = true;
   iee: boolean = true;
   adm: boolean = true;

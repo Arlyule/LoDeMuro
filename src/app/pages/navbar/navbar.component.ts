@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Accessibility, IAccessibilityOptions, IAccessibilityMenuLabelsOptions } from 'accessibility';
+import { CargarScriptsService } from 'src/app/services/cargar-scripts.service';
 
 @Component({
   selector: 'app-navbar',
@@ -26,7 +27,8 @@ export class NavbarComponent implements OnInit {
     this.setupSearch();
   }
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private cargaScrip: CargarScriptsService) {
+    cargaScrip.cargarScripts(['chat']);
     window.addEventListener('load', function () {
       var labels: IAccessibilityMenuLabelsOptions = {
         resetTitle: 'restablecer',
@@ -52,8 +54,12 @@ export class NavbarComponent implements OnInit {
       var options: IAccessibilityOptions = {
         labels: labels,
         icon: {
-          useEmojis: true
+          useEmojis: true,
+          position:{
+            top: {size:2 ,units:"vh"}
+          }
         }
+
       };
 
       new Accessibility(options);

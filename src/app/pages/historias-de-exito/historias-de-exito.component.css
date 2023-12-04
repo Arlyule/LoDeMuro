@@ -49,17 +49,6 @@
   color: gray;
 }
 
-.btn {
-  background-color: #3498db;
-  color: white;
-}
-
-.btn:hover {
-  background-color: white;
-  color: #3498db;
-  border: 1px solid #3498db;
-}
-
 .footer {
   background-color: #063970 !important;
 }
